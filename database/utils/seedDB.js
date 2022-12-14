@@ -8,6 +8,12 @@ const { Campus, Student } = require('../models');  // Import database models
 // Seed database
 const seedDB = async () => {
 	// Create a new campus
+	const no_school = await Campus.create({
+		name: "No School",
+		address: "",
+		description: "This is a section for formor students who were removed from a school."
+	});
+	// Create a new campus
 	const dummy_campus = await Campus.create({
 		name: "Hunter College",
 		address: "695 Park Ave, New York, NY 10065",
@@ -25,23 +31,23 @@ const seedDB = async () => {
 		address: "2900 Bedford Ave, Brooklyn, NY 11210",
 		description: "This is a school in Brooklyn, New York."
 	});
-	
+
 	// Create a new student for a campus
 	const dummy_student = await Student.create({
 		firstname: "Joe",
-      lastname: "Smith",
-	  email: "joesmithtestemail",
-	  imgUrl: "https://as2.ftcdn.net/v2/jpg/03/31/69/91/1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg",
-	  gpa: 4
+		lastname: "Smith",
+		email: "joesmithtestemail",
+		imgUrl: "https://as2.ftcdn.net/v2/jpg/03/31/69/91/1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg",
+		gpa: 4
 	});
 
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
 		firstname: "Mary",
-      lastname: "Johnson",
-	  email: "maryjohnsontestemail",
-	  imgUrl: "https://as2.ftcdn.net/v2/jpg/03/31/69/91/1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg",
-	  gpa: 2
+		lastname: "Johnson",
+		email: "maryjohnsontestemail",
+		imgUrl: "https://as2.ftcdn.net/v2/jpg/03/31/69/91/1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg",
+		gpa: 2
 	});
 
 	// Add students to campuses
