@@ -11,7 +11,7 @@ const seedDB = async () => {
 	const no_school = await Campus.create({
 		name: "No School",
 		address: "",
-		description: "This is a section for formor students who were removed from a school."
+		description: "This is a section for former students who were removed from a school."
 	});
 	// Create a new campus
 	const dummy_campus = await Campus.create({
