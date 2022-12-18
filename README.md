@@ -2,6 +2,15 @@
 
 This repository is the server (back-end) starter code for Final Project (CRUD Application).
 
+## Group Members
+
+1. Wei Da Chen - [chenweida6220](https://github.com/chenweida6220) 
+2. Tommy Liang - [TommyLiang1](https://github.com/TommyLiang1) 
+3. Kevin Hardyal - [kevinville](https://github.com/kevinville) 
+4. Stephanie Kim - [steph-kimm](https://github.com/steph-kimm) 
+
+##
+
 ### Prerequisites
 - Install PostgreSQL (Postgres) [[link](https://www.postgresql.org/download/)] - required to run the database
 - Install Postman [[link](https://www.postman.com/downloads/)] - optional tool for API testing 
